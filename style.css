@@ -1,0 +1,167 @@
+/*** Global ***/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: rgb(0,153,18,1);
+}
+
+a{
+  text-decoration: none;
+}
+
+html{
+  /*Variáveis*/
+  --bg-color: #edf2ff;
+  --text-color: #00082f;
+
+}
+
+body.dark {
+  background: rgb(0,153,18,1);
+  /*--bg-color: #00082f;*/
+  --text-color: #ffffff;
+}
+
+body{
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.container{
+  text-align: center;
+  width: 300px;
+  margin: 60px auto;
+}
+
+img.avatar{
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  border: #095202 solid 4px;
+  
+  animation: topdown;
+  animation-duration: 2s;
+}
+
+img{
+  width: 100%;
+}
+
+h1{
+  margin-top: 24px;
+  margin-bottom: 8px;
+
+  animation: topdown;
+  animation-duration: 2s;
+}
+
+p{
+  font-family: 'Roboto Mono', monospace;
+  opacity: 1;
+  font-size: 18px;
+  font-weight: 400;
+
+  animation: topdown;
+  animation-duration: 2s;
+}
+
+.username{
+  font-family: 'Roboto Mono', monospace;
+}
+
+ul{
+  list-style: none;
+  margin: 48px 0;
+}
+
+ul li a {
+  height: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #024b02;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  font-size: 14px;
+
+  margin-bottom: 16px;
+  border-radius: 6px;
+
+  transition: backgroud 400ms;
+
+  animation: topdown;
+  animation-duration: 2s;
+}
+
+/*pseudo-class*/
+
+ul li a:hover{
+  background: #13ca50;
+}
+
+footer {
+  font-weight: 500;
+  font-size: 12px;
+  color: #00082f;
+  opacity: 0.6;
+  transition: opacity 400ms;
+}
+
+footer:hover{
+  opacity: 1;
+}
+
+footer a{
+  color: var(--text-color);
+}
+
+img.logozap{
+  width: 7%;
+  border-radius: 30%;
+}
+
+img.pedroWhats{
+  width: 7%;
+  border-radius: 30%;
+}
+
+img.joaoWhats{
+  width: 7%;
+  border-radius: 30%;
+}
+
+img.logoYouTube{
+  width: 7%;
+  border-radius: 30%;
+}
+
+/*** Roda pé ***/
+
+img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.cat {
+  height: 100px;
+  width: 100px;
+  display: block;
+  margin: 0px auto;
+ }
+
+/* background: #FFFFFF url() no-repeat right top fixed;*/
+
+@keyframes topdown {
+  0%{
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
